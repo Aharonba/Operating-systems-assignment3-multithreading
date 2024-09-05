@@ -1,0 +1,137 @@
+## First example: ##
+
+Description: An example describing communication between a server and two clients
+
+<> Server:
+
+Please type:
+
+./server
+
+
+<> Client 1:
+
+Please type line ny line:
+
+./client
+
+Newgraph 4,3
+0 1
+1 2
+2 0
+
+//
+should print:
+Graph created with 4 vertices and 3 edges.
+//
+
+<> Client 2:
+
+Please type line ny line:
+
+./client
+
+Kosaraju
+
+//
+should print:
+SCC: 0 2 1
+SCC: 3
+//
+
+Please type line ny line:
+
+Removeedge 2,0
+Kosaraju
+
+//
+should print:
+SCC: 0
+SCC: 1
+SCC: 2
+SCC: 3
+SCC: 4
+//
+
+
+## Second example: ##
+
+Description: An example describing communication between a server and three clients
+
+<> Server:
+
+Please type:
+
+./server
+
+
+<> Client 1:
+
+Please type line ny line:
+
+./client
+
+Newgraph 3,2
+
+0 1
+1 2
+
+//
+should print:
+Graph created with 3 vertices and 2 edges.
+//
+
+Kosaraju
+//
+should print:
+SCC: 0
+SCC: 1
+SCC: 2
+//
+
+**** Client 2 will destroy the previous graph and build a new one in its place ****
+
+<> Client 2:
+
+Please type line ny line:
+
+./client
+
+Newgraph 4,4
+
+0 1
+1 2
+2 0
+3 0
+
+//
+should print:
+Graph created with 4 vertices and 4 edges.
+//
+
+Kosaraju
+
+//
+should print:
+SCC: 0 1 2
+SCC: 3
+//
+
+exit
+
+
+<> Client 3:
+
+Please type line ny line:
+
+./client
+
+Newedge 2,3
+
+Kosaraju
+
+//
+should print:
+SCC: 0 1 2 3
+//
+
