@@ -1,0 +1,56 @@
+Description: We will see the progress of the program with the help of the design template: reactor.
+
+<> Server:
+
+Please type:
+
+./server
+
+
+<> Client 1:
+
+Please type line ny line:
+
+./client
+
+Newgraph 8,5
+
+2 4
+4 5
+5 6
+6 4
+6 7
+
+Kosaraju
+
+//should print:
+3 
+2 
+4 6 5 
+7 
+1 
+0 
+
+
+<> Client 2:
+
+Please type line ny line:
+
+./client
+
+Newedge 0,1
+Newedge 1,2
+Newedge 2,3
+Newedge 3,0
+
+Kosaraju
+
+//should print:
+0 1 2 3 
+4 5 6
+7
+
+
+
+
+

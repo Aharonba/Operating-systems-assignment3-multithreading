@@ -1,0 +1,117 @@
+1.
+Input:
+
+./demo
+
+Newgraph 5,5
+0 1
+1 2
+2 0
+1 3
+3 4
+Kosaraju
+
+
+Output:
+
+SCC: 0 2 1
+SCC: 3
+SCC: 4
+
+##please write exit##
+
+2.
+Input:
+
+./demo
+
+Newgraph 4,3
+0 1
+1 2
+2 3
+Kosaraju
+
+Output:
+
+SCC: 0
+SCC: 1
+SCC: 2
+SCC: 3
+
+
+Newedge 3,0
+Kosaraju
+
+Output:
+
+SCC: 0 3 2 1
+
+
+Removeedge 1,2
+Kosaraju
+
+
+Output:
+
+SCC: 0
+SCC: 1
+SCC: 2
+SCC: 3
+
+
+##please write exit##
+
+
+3.
+
+Input:
+
+./demo
+
+Newgraph 6,7
+0 1
+1 2
+2 0
+1 3
+3 4
+4 5
+5 3
+Kosaraju
+
+
+Output:
+
+SCC: 0 2 1
+SCC: 3 5 4
+
+
+##please write exit##
+
+4.
+
+Input:
+
+./demo
+
+Newgraph 4,4
+0 1
+1 2
+2 3
+3 0
+Kosaraju
+
+Output:
+0 3 2 1
+
+Removeedge 1,2
+Kosaraju
+
+Output:
+
+
+SCC: 2
+SCC: 3
+SCC: 0
+SCC: 1
+
+##please write exit##

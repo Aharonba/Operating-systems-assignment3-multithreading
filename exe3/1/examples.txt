@@ -1,0 +1,34 @@
+First example ::
+
+./demo
+
+4 4
+
+0 1
+1 2
+2 3
+3 0
+
+// Should print:
+
+Strongly Connected Components:
+0 3 2 1 
+
+Second example::
+
+./demo
+
+5 5
+
+0 1
+1 2
+2 0 
+2 3
+3 4
+
+// Should print:
+
+Strongly Connected Components:
+0 2 1 
+3 
+4 

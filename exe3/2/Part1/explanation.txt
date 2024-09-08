@@ -1,0 +1,6 @@
+In order to perform the execution, run:
+
+./demo
+
+
+It can be clearly seen after several runs that the implementation of deque is more efficient both in creating new edges and in running the algorithm

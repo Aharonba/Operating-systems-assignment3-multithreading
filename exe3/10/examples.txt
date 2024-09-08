@@ -1,0 +1,57 @@
+
+<> Server:
+
+Please type:
+
+./server
+
+
+<> Client 1:
+
+Please type line ny line:
+
+./client
+
+Newgraph 4,4
+ 
+0 1
+1 2
+2 3
+3 0
+
+<> Client 2:
+
+Please type line ny line:
+
+./client
+
+Kosaraju
+
+//should print in the terminal of client 2:
+0 1 2 3 
+
+//should print in the terminal of the server:
+
+At least 50% of the graph belongs to the same SCC
+
+
+<> Client 1:
+
+Please type line ny line:
+
+Removeedge 0,1
+
+Kosaraju
+
+//should print in the terminal of client 2:
+0
+1
+2
+3
+
+//should print in the terminal of the server:
+
+At least 50% of the graph no longer belongs to the same SCC
+
+
+

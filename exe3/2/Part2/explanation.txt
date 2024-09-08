@@ -1,0 +1,7 @@
+In order to perform the execution, run:
+
+./demo
+
+
+It can be clearly seen after several runs that the implementation of deque is more efficient especially in running the algorithm
+
